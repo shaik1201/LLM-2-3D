@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+</head>
+<body>
+    <div id="chat-container">
+        <h1>Chatbot</h1>
+        <div id="chat-box" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <p style="font-weight: bold; color: green;">Chatbot: {{ response }}</p>
+        </div>
+        <form id="user-input" method="post" action="/get_response">
+            <input type="text" name="user_message" id="user-message" placeholder="Type your message here..." style="width: 80%; padding: 5px;">
+            <button type="submit" style="padding: 5px;">Send</button>
+        </form>
+    </div>
+</body>
+</html>
